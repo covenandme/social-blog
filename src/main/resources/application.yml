@@ -1,0 +1,45 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/blog_social?useSSL=false&serverTimezone=Asia/Shanghai&characterEncoding=utf8
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: Asia/Shanghai
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 50MB
+server:
+  port: 8080
+  servlet:
+    context-path: /
+
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: true
+    default-enum-type-handler: org.apache.ibatis.type.EnumOrdinalTypeHandler
+  global-config:
+    db-config:
+      logic-delete-field: deleted
+      logic-delete-value: 1
+      logic-not-delete-value: 0
+
+security:
+  jwt:
+    secret: 4d4F72595333637233744b3379546840744973563372794c306e67456e307567682121e
+    expiration-minutes: 1440
+
+app:
+  cors:
+    allowed-origins: "*"
+  storage:
+    local-path: uploads
+    public-prefix: /files/
+
+logging:
+  level:
+    root: INFO
+    com.blog: DEBUG
+

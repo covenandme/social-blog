@@ -1,0 +1,53 @@
+HELP.md
+
+# Maven build
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!/**/src/main/**/target/
+!/**/src/test/**/target/
+
+# Gradle / NetBeans / misc builds
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!/**/src/main/**/build/
+!/**/src/test/**/build/
+
+# IDE configs
+.idea/
+*.iml
+*.ipr
+*.iws
+.classpath
+.project
+.settings/
+.factorypath
+.springBeans
+.sts4-cache
+.apt_generated
+.vscode/
+
+# Logs & temp
+*.log
+logs/
+*.tmp
+*.swp
+*.swo
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Backend runtime files
+uploads/
+
+# Node / frontend
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+frontend/.eslintcache
+frontend/.DS_Store
+*.tsbuildinfo
