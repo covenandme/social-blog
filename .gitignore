@@ -42,7 +42,7 @@ logs/
 Thumbs.db
 
 # Backend runtime files
-uploads/
+#uploads/
 
 # Node / frontend
 frontend/node_modules/
